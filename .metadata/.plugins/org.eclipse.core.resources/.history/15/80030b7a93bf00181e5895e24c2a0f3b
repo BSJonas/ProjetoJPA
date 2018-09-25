@@ -1,0 +1,9 @@
+package com.controlmoney.api.model;
+
+
+@Entity
+public class Categoria {
+	
+	
+
+}

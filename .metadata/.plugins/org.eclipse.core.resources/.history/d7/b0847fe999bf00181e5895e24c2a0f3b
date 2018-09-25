@@ -1,0 +1,5 @@
+package com.controlmoney.api.repository;
+
+public interface CategoriaRepository {
+
+}

@@ -1,0 +1,25 @@
+package aplicação;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+import dominio.Pessoa;
+
+public class Programa {
+
+	public static void main(String[] args) {
+		
+		Pessoa p1 = new Pessoa (1, "Calos da Silva", "carlos@gmail.com");
+		Pessoa p2 = new Pessoa (2, "Maria Oliveira", "maria@gmail.com");
+		Pessoa p3 = new Pessoa (3, "Judite Sousa", "Judite@gmail.com");
+		
+		EntityManagerFactory emf = Persistence.createEntityManagerFactory("exemplo-jpa");
+		
+		
+		System.out.println(p1);
+		System.out.println(p2);
+		System.out.println(p3);
+
+	}
+
+}
